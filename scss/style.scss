@@ -256,3 +256,43 @@ ul,ol {
     padding: 70px 0px;
     color: #828492;
 }
+
+.footer__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__block {
+    width: 25%;
+
+    h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 35px;
+        padding-left: 10px;
+        border-left: 5px solid #01C0DE;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    p,a {
+        font-size: 13.5px;
+    }
+}
+
+.footer__nav {
+
+    li {
+
+        a {
+            color: #828492;
+        }
+
+        a:hover {
+            color: #036D8A;
+        }
+    }
+}
