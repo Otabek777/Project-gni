@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    background-color: transparent !important;
     background: url(../img/body-bg.png) no-repeat center;
     background-size: 100% 100%;
     padding-bottom: 100px;
@@ -102,6 +103,7 @@ ul,ol {
 
 .nav__navbar {
     display: flex;
+    margin: 0;
 }
 
 .nav__item {
@@ -525,6 +527,7 @@ ul,ol {
         top: -80px;
         display: flex;
         justify-content: flex-end;
+        bottom: auto;
     }
 
     .slick-arrow {
@@ -654,6 +657,196 @@ ul,ol {
 
 .carousel-solutions .carousel__box {
     background-color: transparent;
+}
+
+//------------------------ Projects
+.banner-projects {
+    background: url(../img/banner-3.png) no-repeat center;
+    background-size: cover;
+}
+
+.projects .solutions__block {
+    min-height: 220px;
+    background-color: #000833;
+    border: 1px solid #141D4A;
+    overflow: visible;
+    padding-top: 45px;
+
+    h5 {
+        margin-bottom: 10px;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        right: auto; bottom: auto;
+        top: -20px; left: 30px;
+        background-color: #000833;
+        padding: 0px 20px;
+        opacity: 1;
+    }
+
+    img {
+        width: 30px;
+    }
+}
+
+.projects .solutions__block:hover {
+    background-color: #000833;
+
+    h5 {
+        color: #fff;
+    }
+
+    p {
+        color: #808499;
+    }
+}
+
+//---------------------- Project-box
+.projects-box {
+    background-color: #0D153D;
+    color: #7D7F8D;
+    padding: 45px;
+    margin-bottom: 45px;
+    position: relative;
+
+    img {
+        position: absolute; top: 10px; left: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        padding-bottom: 20px;
+
+        span {
+            font-weight: 600;
+            color: #01D0EF;
+        }
+    }
+}
+
+//------------------------- Projects-tech
+.projects-tech {
+    margin-top: 100px;
+}
+
+.projects-tech__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .projects-tech-right,.projects-box {
+        width: 49%;
+        margin: 0;
+    }
+
+    .projects-box {
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .projects-tech-right {
+        width: 47%;
+
+        h3 {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 300;
+            margin: 40px 0;
+        }
+    }
+}
+
+.accordeon_box {
+    margin-bottom: 10px;
+}
+
+.accordeon_box .accordeon_block {
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #01D0EF;
+    transition: all .2s ease;
+    margin-top: 1px;
+}
+
+.accordeon_box .accordeon_block p {
+    padding: 20px;
+    margin: 0;
+}
+
+.accordeon_box .accordeon__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D153D;
+    color: #fff;
+    padding: 10px 10px 10px 20px;
+    transition: all.2s ease;
+    cursor: pointer;
+
+    p {
+        margin: 0;
+    }
+
+    span {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        transition: all.2s ease;
+    }
+
+    span::after {
+        content: "";
+        width: 15px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    span::before {
+        content: "";
+        width: 2px;
+        height: 15px;
+        background-color: #fff;
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.accordeon__item.active + .accordeon_block {
+    max-height: 1200px;
+    transition: all .9s ease;
+
+}
+
+.accordeon__item.active {
+    background-color: #01D0EF;
+}
+
+.accordeon__item.active span {
+    transform: rotate(45deg);
+    background-color: #0D153D;
+}
+
+.accordeon__item.active span::after {
+    background-color: #01D0EF;
+}
+
+.accordeon__item.active span::before {
+    background-color: #01D0EF;
 }
 
 //------------------------- Footer
